@@ -9,7 +9,7 @@ const MESSAGE_I="chatMessageI"
 function ChatCard({id, imageUrl, chatName, handleChatSelect}){
     return (
         <div className="chatFriendCard" onClick={() => handleChatSelect(id)}>
-            {/* <img src={users[0].image} className="chatFriendImg" alt="фото профиля"/> */}
+            <img src={imageUrl} className="chatFriendImg" alt="фото профиля"/>
             <p className="chatFriendName">{chatName}</p>
         </div>
     )
@@ -17,7 +17,7 @@ function ChatCard({id, imageUrl, chatName, handleChatSelect}){
 
 function Message({id, userId, text}){
     return(
-        <p className={"chatMessage "+(userId==getCurrentChatId()?MESSAGE_I:"")}>{text}</p> 
+        <p className={"chatMessage "+(userId==getCurrentUserId()?MESSAGE_I:"")}>{text}</p> 
     )
 }
 

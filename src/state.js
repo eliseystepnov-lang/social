@@ -7,22 +7,22 @@ export let users=[
     {
         id: 0,
         name: "Эль Примо",
-        // image: {elprimo}
+        image: "https://raw.githubusercontent.com/eliseystepnov-lang/social/refs/heads/main/src/img/elprimo.jpg"
     },
     {
         id: 1,
         name: "Дрил Миньон",
-        // image: {drillminion}
+        image: "https://raw.githubusercontent.com/eliseystepnov-lang/social/refs/heads/main/src/img/drillminion.jpg"
     },
     {
         id: 2,
         name: "Найк Миньон",
-        // image: {nikeminion}
+        image: "https://raw.githubusercontent.com/eliseystepnov-lang/social/refs/heads/main/src/img/nikeminion.jpeg"
     },
     {
         id: 3,
         name: "qwe",
-        // image: {nikeminion}
+        image: "https://raw.githubusercontent.com/eliseystepnov-lang/social/refs/heads/main/src/img/ProfilePhoto.jpeg"
     }
 ]
 let chats=[
@@ -30,22 +30,29 @@ let chats=[
         id: 0,
         usersId: [3, 2],
         messagesId: [0, 1, 2],
-        // imageUrl: {nikeminion},
+        imageUrl: "https://raw.githubusercontent.com/eliseystepnov-lang/social/refs/heads/main/src/img/nikeminion.jpeg",
         chatName: "Найк Миньон"
     },
     {
         id: 1,
         usersId: [3, 1],
         messagesId: [],
-        // imageUrl: {nikeminion},
+        imageUrl: "https://raw.githubusercontent.com/eliseystepnov-lang/social/refs/heads/main/src/img/drillminion.jpg",
         chatName: "Дрил Миньон"
     },
     {
         id: 2,
         usersId: [3],
         messagesId: [],
-        // imageUrl: {nikeminion},
+        imageUrl: "https://raw.githubusercontent.com/eliseystepnov-lang/social/refs/heads/main/src/img/ProfilePhoto.jpeg",
         chatName: "Заметки"
+    },
+    {
+        id: 3,
+        usersId: [0, 1, 2, 3],
+        messagesId: [3, 4, 5, 6],
+        imagesUrl: "https://funny.klev.club/smeh/uploads/posts/2024-05/funny-klev-club-7ved-p-smeshnie-kartinki-avatarki-net-21.jpg",
+        chatName: "Групповой чат"
     }
 ]
 let messages=[
@@ -62,6 +69,26 @@ let messages=[
     {
         id: 2,
         userId: 2,
+        text: "Как дела?"
+    },
+    {
+        id: 3,
+        userId: 0,
+        text: "Как дела?"
+    },
+    {
+        id: 4,
+        userId: 1,
+        text: "Как дела?"
+    },
+    {
+        id: 5,
+        userId: 2,
+        text: "Как дела?"
+    },
+    {
+        id: 6,
+        userId: 3,
         text: "Как дела?"
     }
 ]
