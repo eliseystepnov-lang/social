@@ -1,0 +1,29 @@
+aside{
+    height: 100vh;
+    width: 15%;
+    padding: 20px;
+    color: white;
+}
+.logo{
+    width: 100%;
+}
+.asideContent{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+.asideContentCard{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 10px;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+.asideContentImg{
+    margin-right: 5px;
+}
+.asideContentText{
+    font-size: 20px;
+}
